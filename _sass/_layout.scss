@@ -4,7 +4,9 @@
 .site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    min-height: 186px;
+    background: #615f5f url(../img/header_bg.jpg) no-repeat center;
+    margin: auto;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -20,7 +22,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $brand-color;
     }
 }
 
