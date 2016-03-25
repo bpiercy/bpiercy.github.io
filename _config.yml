@@ -1,33 +1,21 @@
-url: https://www.samipiercy.com
+url: https://www.brandonpiercy.com
 baseurl: 
 
 # Site settings
-title: Sami Piercy
+title: Brandon Piercy
 email: Use the Contact Form!
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "Brandon D Piercy, Materials Scientist."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-bg: fff
-  secondary-bg: f3f3f3
-  primary-text: 333
-  secondary-text: fff
-  accent: f36b5b
-  accent-rgb: 243, 107, 91
-  accent-light: ffa38f
-  accent-dark: b6342e
+  primary-text: 111
+  secondary-bg: ddd
+  secondary-text: 555
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: linkedin
-    url: http://linkedin.com/in/samanthapiercy
-  - title: behance
-    url:
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
 
 # Build settings
 markdown: kramdown
