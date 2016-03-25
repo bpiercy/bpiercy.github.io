@@ -1,35 +1,33 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+url: https://www.samipiercy.com
+baseurl: 
 
 # Site settings
-title: Brandon Piercy
-email: brandon.piercy@gatech.edu
-description: > # this means to ignore newlines until "baseurl:"
-Brandon Piercy's Homepage: Advanced Materials Synthesis
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://bpiercy.com" # the base hostname & protocol for your site
-github_username:  bpiercy
+title: Sami Piercy
+email: Use the Contact Form!
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 
-# Color settings
+# Color settings (hex-codes without the leading hash-tag)
 color:
-  primary-dark: '#000000'
-  secondary-dark: '#25172e'
-  primary-light: '#f8e9fc'
-  links: '#219ab3'
+  primary-bg: fff
+  secondary-bg: f3f3f3
+  primary-text: 333
+  secondary-text: fff
+  accent: f36b5b
+  accent-rgb: 243, 107, 91
+  accent-light: ffa38f
+  accent-dark: b6342e
 
-# Footer settings
-footer: Your Website
-
-# Social settings
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: linkedin
-    url: http://www.linkedin.com/in/brandonpiercy
+    url: http://linkedin.com/in/samanthapiercy
+  - title: behance
+    url:
 
-
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
 
 # Build settings
 markdown: kramdown
