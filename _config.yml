@@ -14,5 +14,23 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://bpiercy.com" # the base hostname & protocol for your site
 github_username:  bpiercy
 
+# Color settings
+color:
+  primary-dark: '#000000'
+  secondary-dark: '#25172e'
+  primary-light: '#f8e9fc'
+  links: '#219ab3'
+
+# Footer settings
+footer: Your Website
+
+# Social settings
+social:
+  - title: linkedin
+    url: http://www.linkedin.com/in/brandonpiercy
+
+
+
 # Build settings
 markdown: kramdown
+permalink: pretty
