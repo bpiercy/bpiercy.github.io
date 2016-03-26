@@ -6,6 +6,7 @@
 
 body {
     overflow-x: hidden;
+    position:relative;
     font-family: "saxMono","Courier New",Courier,serif;
     color: #{{ site.color.primary-text }};
 }
@@ -50,7 +51,7 @@ h5,
 h6 {
     font-family: "saxMono","Courier New",Courier,serif;
     font-weight: 700;
-}*/
+}
 
 .img-centered {
     margin: 0 auto;
@@ -120,6 +121,9 @@ fieldset[disabled] .btn-primary.active {
     font-size: 18px;
     font-weight: 700;
     background-color: #{{ site.color.primary-bg }};
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
 }
 
 .btn-xl:hover,
@@ -192,47 +196,48 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #{{ site.color.primary-bg }};
+    background-color: #{{ site.color.primary-text }};
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #{{ site.color.primary-bg }};
+    background-color: #{{ site.color.secondary-bg }};
     border-color: #{{ site.color.primary-text }};
+    -webkit-transition: background-color .1s;
+    -moz-transition: background-color .1s;
+    transition: background-color .1s;
 }
 
 .navbar-default .nav li a {
     font-family: "saxMono","Courier New",Courier,serif;
     font-weight: 400;
     letter-spacing: 1px;
+    border-radius: 2;
     color: #{{ site.color.primary-text }};
-    border-color: #{{ site.color.primary-text }};
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 1px;
-    color: #{{ site.color.primary-text }};
-    border-color: #{{ site.color.primary-text }};
+    text-decoration: underline;
 }
 
 .navbar-default .navbar-nav>.active>a {
-    border-radius: 0;
     color: #{{ site.color.primary-text }};
-    background-color: #{{ site.color.primary-bg }};
+    background-color: #{{ site.color.secondary-bg }};
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #{{ site.color.primary-text }};
-    background-color: #{{ site.color.primary-bg }};
+    background-color: #{{ site.color.secondary-bg }};
 }
 
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
-        border: 4px;
-        background-color: transparent;
+        border: none;
+        background-color: #{{ site.color.primary-bg }};
         -webkit-transition: padding .1s;
         -moz-transition: padding .1s;
         transition: padding .1s;
@@ -250,7 +255,10 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
+        padding: 5px 0;
+        border-bottom-style: solid;
+        border-bottom-width: 4px;
+        border-color: #{{ site.color.primary-text }};
         background-color: #{{ site.color.primary-bg }};
     }
 
@@ -273,9 +281,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 #about h1, h2, p {
-    padding: 1em;
+    padding: 10px;
     margin: 10px;
-    line-height: 22px;
+    /*line-height: 22px;*/
     background-color: #{{ site.color.primary-bg }};
 }
 
@@ -288,10 +296,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 
-@media(min-width:768px) {
-    header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
+/*@media(min-width:768px) {
+    #about h1,h2,p {
+        padding: 10px;
     }
 
     header .intro-text .intro-lead-in {
@@ -310,10 +317,10 @@ fieldset[disabled] .btn-xl.active {
         font-weight: 700;
         line-height: 75px;
     }
-}
+}*/
 
 section {
-    padding: 100px 0;
+    border-top: 4px;
 }
 
 section h2.section-heading {
@@ -343,24 +350,19 @@ section h3.section-subheading {
 }
 
 
-section#about .page-scroll {
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
-}
-
 section#cv h3{
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 3px
 }
 
-section#contact {
+/*section#contact {
     background-color: #{{ site.color.secondary-bg }};
-}
+}*/
 
-section#contact .form-group {
+/*section#contact .form-group {
     margin-bottom: 25px;
-}
+}*/
 
 section#contact .form-group input,
 section#contact .form-group textarea {
@@ -377,7 +379,7 @@ section#contact .form-group textarea.form-control {
 
 section#contact .form-control:focus {
     border-width: 2px;
-    border-color: #{{ site.color.accent }};
+    border-color: #{{ site.color.primary-text }};
     box-shadow: none;
 }
 
@@ -464,77 +466,6 @@ ul.social-buttons li a:active {
 .btn.active,
 .btn:active:focus {
     outline: 0;
-}
-
-.portfolio-modal .modal-content {
-    padding: 100px 0;
-    min-height: 100%;
-    border: 0;
-    border-radius: 0;
-    text-align: center;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.portfolio-modal .modal-content h2 {
-    margin-bottom: 15px;
-    font-size: 3em;
-}
-
-.portfolio-modal .modal-content p {
-    margin-bottom: 30px;
-}
-
-.portfolio-modal .modal-content p.item-intro {
-    margin: 20px 0 30px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-style: italic;
-}
-
-.portfolio-modal .modal-content ul.list-inline {
-    margin-top: 0;
-    margin-bottom: 30px;
-}
-
-.portfolio-modal .modal-content img {
-    margin-bottom: 30px;
-}
-
-.portfolio-modal .close-modal {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.portfolio-modal .close-modal:hover {
-    opacity: .3;
-}
-
-.portfolio-modal .close-modal .lr {
-    z-index: 1051;
-    width: 1px;
-    height: 75px;
-    margin-left: 35px;
-    background-color: #222;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.portfolio-modal .close-modal .lr .rl {
-    z-index: 1052;
-    width: 1px;
-    height: 75px;
-    background-color: #222;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
 }
 
 ::-moz-selection {
