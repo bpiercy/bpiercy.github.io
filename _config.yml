@@ -15,8 +15,10 @@ color:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  -linkedin: brandonpiercy
-  -github: bpiercy
+  - title: linkedin
+    url: http://linkedin.com/in/brandonpiercy
+  - title: github
+    url: http://www.github.com/bpiercy
 
 # Build settings
 markdown: kramdown
